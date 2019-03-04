@@ -4,13 +4,13 @@
     "key_plural": "articulos",
     "keyWithParam": "Usted selecciono {{count}} articulo",
     "keyWithParam_plural": "Usted selecciono {{count}} articulos",
-    "current_date": "Hoy es {{date, LLLL}}",
+    "current_date": "Hoy es {{date, LL}}",
     "available_languages": {
         "en": "Ingles",
         "es": "Español"
     },
     "error": {
         "404": "Pagina no existe",
-        "default": "Error inesperado, por favor contacte el Departamento de Soporte"
+        "default": "Error inesperado, por favor contacte al Departamento de Soporte"
     }
 }

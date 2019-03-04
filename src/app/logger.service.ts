@@ -7,11 +7,13 @@ import { debug } from 'util';
 export class LogServiceService {
 
   constructor() {
-    this.logger('document.head.title: ' + document.getElementsByTagName('html')[0].title);
+    this.logger('document.head.title: ' + document.title);
   }
 
   logger(message: String) {
-    if (document.getElementsByTagName('html')[0].title === 'debug') {
+    // this allows the developer to run on the loginfo from the console
+    // by just adding: document.title='debug'
+    if (document.title === 'info') {
       console.log(message);
     }
   }

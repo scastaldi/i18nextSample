@@ -18,13 +18,11 @@ const options = {
     format: function(value, format, lng) {
       if (format === 'uppercase') { return value.toUpperCase(); }
       if (value instanceof Date) {
-        // this helps change the format and local of momentjs
-        console.log(`value: ${value}, format: ${format}, lng: ${lng}`);
-        moment.locale(lng);
+          moment.locale(lng);
         return moment(value).format(format);
       }
       return value;
-  }
+    }
   }
 };
 
@@ -66,6 +64,6 @@ export const I18N_PROVIDERS = [
 
 export class AppModule {
   constructor(private loggerService: LogServiceService) {
-    this.loggerService.logger('testMode:' + document.getElementsByTagName('html')[0].title);
+    this.loggerService.logger('testMode:' + document.title);
   }
 }

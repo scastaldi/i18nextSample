@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   mydate: Date = new Date();
 
   constructor(@Inject(I18NEXT_SERVICE) private i18NextService: ITranslationService, private loggerService: LogServiceService) {
-    this.loggerService.logger('testMode:' + document.getElementsByTagName('html')[0].title);
+    this.loggerService.logger('testMode:' + document.title);
   }
 
   ngOnInit() {
