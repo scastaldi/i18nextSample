@@ -1,0 +1,16 @@
+{
+    "sampletest":"This is a new test",
+    "key": "item",
+    "key_plural": "items",
+    "keyWithParam": "You selected {{count}} item",
+    "keyWithParam_plural": "You selected {{count}} items",
+    "current_date": "The current date is {{date, LLLL}}",
+    "available_languages": {
+        "en": "English",
+        "es": "Spanish"
+    },
+    "error": {
+        "404": "Page not found",
+        "default": "An error occurred, please contact Support"
+    }
+}

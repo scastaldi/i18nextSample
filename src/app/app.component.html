@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+    <div>
+        <ng-template ngFor let-lang [ngForOf]="languages" let-i="index">
+            <a *ngIf="language !== lang" href="" (click)="changeLanguage(lang)">{{ 'available_languages.' + lang | i18nextCap }}</a>
+        </ng-template>
+    </div>
+  <h1>
+    {{ 'sampletest' | i18next }}!
+  </h1>
+</div>
+<div>
+  <input [(ngModel)]="people" type="number" id=quantity name="quantity" min=0 max=50>
+  {{ 'key' | i18next: {count: people} }}
+</div>
+<div>
+  <label>{{ 'keyWithParam' | i18next: {count: people} }}</label>
+</div>
+{{mydate}}
+<div>
+  <label>{{ 'current_date' | i18next: { date: mydate } }}</label>
+</div>
+<div>
+  <button (click)="errorTriggered('404')">404 Error</button>
+  <button (click)="errorTriggered('500')">500 Error</button>
+  <button (click)="errorTriggered('unknown')">Any other error</button>
+  <button (click)="errorTriggered('clear')">Clear</button>
+  <div *ngIf="isError">
+    {{ [error, 'error.default'] | i18next }}
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+    "sampletest":"Mensaje de prueba",
+    "key": "articulo",
+    "key_plural": "articulos",
+    "keyWithParam": "Usted selecciono {{count}} articulo",
+    "keyWithParam_plural": "Usted selecciono {{count}} articulos",
+    "current_date": "Hoy es {{date, LLLL}}",
+    "available_languages": {
+        "en": "Ingles",
+        "es": "Español"
+    },
+    "error": {
+        "404": "Pagina no existe",
+        "default": "Error inesperado, por favor contacte el Departamento de Soporte"
+    }
+}
