@@ -79,3 +79,7 @@ const options = {
   }
 };
 ```
+
+## Percy
+
+PERCY_TOKEN=xxx PERCY_BRANCH=local npm test

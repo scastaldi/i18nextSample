@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { ITranslationService, I18NextModule, I18NEXT_SERVICE, defaultInterpolationFormat } from 'angular-i18next';
 import i18nextLanguageDetector from 'i18next-browser-languagedetector';
 import i18nextXHRBackend from 'i18next-xhr-backend';
-import { debug } from 'util';
 import { LogServiceService } from './logger.service';
 import * as moment from 'moment';
 const options = {
